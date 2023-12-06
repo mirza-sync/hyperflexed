@@ -33,7 +33,7 @@ body {
 
 .card::before {
   background: radial-gradient(
-    800px circle at 100px 100px,
+    800px circle at var(--mouse-x) var(--mouse-y),
     rgba(255, 255, 255, 0.06),
     transparent 40%
   );
