@@ -1,6 +1,8 @@
 # hover-cursor-highlight
 
-The first css video in Hyperflexed's channel. His engaging presentation and soothing voice really hooked me up. Subscribed.
+Source : [You Need This Hover Effect On Your Site ASAP (CSS / JS)](https://www.youtube.com/watch?v=htGfnF1zN4g)
+
+The first effect imitation video in [Hyperflexed's](https://www.youtube.com/@Hyperplexed) channel. Youtube algorithm recommend me this video. Nothing much to expect, but his straight-to-the-point presentation style and soothing voice really hooked me up. Subscribed.
 
 ## Logs
 
