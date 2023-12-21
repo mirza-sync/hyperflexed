@@ -7,7 +7,7 @@ const rand = (min, max) => {
 
 const animate = star => {
   star.style.setProperty("--star-left", `${rand(-10, 100)}%`)
-  star.style.setProperty("--star-top", `${rand(-40, -80)}%`)
+  star.style.setProperty("--star-top", `${rand(-40, 80)}%`)
 
   star.style.animation = "none"
   star.offsetHeight
