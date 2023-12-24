@@ -6,17 +6,18 @@ const rand = (min, max) => {
 }
 
 const animate = star => {
-  star.style.setProperty("--star-left", `${rand(-10, 100)}%`)
-  star.style.setProperty("--star-top", `${rand(-40, 80)}%`)
+  star.style.setProperty("--star-left", `${rand(-10, 100)}%`);
+  star.style.setProperty("--star-top", `${rand(-40, 80)}%`);
 
-  star.style.animation = "none"
-  star.offsetHeight
-  star.style.animation = ""
+  star.style.animation = "none";
+  // Use offsetHeight just for the sake of triggering DOM reflow
+  star.offsetHeight;
+  star.style.animation = "";
 }
 
 for (const star of document.getElementsByClassName('magic-star')) {
   setTimeout(() => {
     animate(star)
-    setInterval(() => animate(star), 1000)
+    setInterval(() => animate(star), 1000);
   }, index++ * (interval / 3));
 }
