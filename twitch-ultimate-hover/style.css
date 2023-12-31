@@ -45,3 +45,18 @@ body {
   width: 100%;
   z-index: 1;
 }
+
+.card:hover > .card-content {
+  background-position: -10% 0%;
+}
+
+.card-content {
+  background: radial-gradient(rgba(255, 255, 255, 0.2) 8%, transparent 8%);
+  background-position: 0% 0%;
+  background-size: 5vmin 5vmin;
+  transition: background-position 350ms ease;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
