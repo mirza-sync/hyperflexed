@@ -55,8 +55,26 @@ body {
   background-position: 0% 0%;
   background-size: 5vmin 5vmin;
   transition: background-position 350ms ease;
-  height: 100%;
-  width: 100%;
+  height: calc(100% - 10vmin);
+  padding: 5vmin;
+  width: calc(100% - 10vmin);
   position: relative;
   z-index: 2;
+}
+
+.card-title,
+.card-subtitle {
+  color: white;
+  font-family: "Anek Latin", sans-serif;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.card-title {
+  font-size: 6vmin;
+}
+
+.card-subtitle {
+  font-size: 3vmin;
+  margin-top: 2vmin;
 }
