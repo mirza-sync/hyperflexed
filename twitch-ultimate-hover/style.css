@@ -5,9 +5,11 @@
 }
 
 body {
+  background-color: rgb(10, 10, 10);
+  height: 100vh;
   margin: 0;
   padding: 0;
-  display: flex;
+  display: grid;
   place-items: center;
 }
 
