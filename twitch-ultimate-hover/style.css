@@ -78,3 +78,18 @@ body {
   font-size: 3vmin;
   margin-top: 2vmin;
 }
+
+.card-subtitle-word {
+  display: inline-block;
+  margin: 0vmin 0.3vmin;
+  position: relative;
+  transform: translateY(40%);
+  transition: none;
+  opacity: 0;
+}
+
+.card:hover > .card-content > .card-subtitle > .card-subtitle-word {
+  transform: translateY(0%);
+  transition: transform 200ms linear;
+  opacity: 1;
+}
