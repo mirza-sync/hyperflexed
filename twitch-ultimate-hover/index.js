@@ -7,6 +7,8 @@ const createWord = (text, index) => {
 
   word.classList.add("card-subtitle-word");
 
+  word.style.transitionDelay = `${index * 40}ms`;
+
   return word;
 }
 
