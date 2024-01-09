@@ -1,3 +1,38 @@
-* {
-  background: red;
+:root {
+  --dark: rgb(20, 20, 20);
+  --purple: rgb(98, 0, 234);
+  --yellow: rgb(253, 216, 53);
+}
+
+body {
+  background: var(--dark);
+  margin: 0px;
+}
+
+.side {
+  width: 100%;
+  height: 100vh;
+
+  display: grid;
+  place-items: center;
+
+  overflow: hidden;
+  position: absolute;
+}
+
+.side .title {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  font-size: 8vw;
+  margin: 0px 15vw;
+  width: 70vw;
+}
+
+#left-side {
+  background-color: var(--purple);
+  z-index: 2;
+}
+
+#right-side {
+  background-color: var(--yellow);
 }
