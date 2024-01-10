@@ -13,4 +13,7 @@ Source: [I've Found the Optimal Website Header and...](https://www.youtube.com/w
    > Hope I won't google on how to center a div inside another div. `display: grid; place-items: center`. Future me pls dont forget this. 😉
 
 2. Damn... making the sliding on hover effect is actually so simple. Just get the x's cursor posotion, get the percentage relative to window's width, and set the percentage to the `left-side` element. Hoping one day I'll be this creative to figure out things like this by myself. #KeepLearning.
+
    > The sliding effect is easy, but sliding into your DM is hard #rejection😢
+
+3. Followed the tutorial and change the `font-family` to `Lobster`. Unfortunately I don't have it in my laptop, and it fallback into something that look like a `Comic Sans`. And the awesome effect suddenly turns into the worst creation. Just one small change, and it effect the whole art.

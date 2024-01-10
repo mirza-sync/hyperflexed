@@ -28,11 +28,33 @@ body {
   width: 70vw;
 }
 
+.side .fancy {
+  font-family: "Lobster", cursive;
+  font-size: 1.3em;
+  line-height: 0.8em;
+}
+
 #left-side {
   background-color: var(--purple);
   z-index: 2;
 }
 
+#left-side .title {
+  color: white;
+}
+
+#left-side .fancy {
+  color: var(--yellow);
+}
+
 #right-side {
   background-color: var(--yellow);
+}
+
+#right-side .title {
+  color: var(--dark);
+}
+
+#right-side .fancy {
+  color: white;
 }
