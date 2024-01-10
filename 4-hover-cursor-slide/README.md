@@ -16,4 +16,5 @@ Source: [I've Found the Optimal Website Header and...](https://www.youtube.com/w
 
    > The sliding effect is easy, but sliding into your DM is hard #rejection😢
 
-3. Followed the tutorial and change the `font-family` to `Lobster`. Unfortunately I don't have it in my laptop, and it fallback into something that look like a `Comic Sans`. And the awesome effect suddenly turns into the worst creation. Just one small change, and it effect the whole art.
+3. Followed the tutorial and change the `font-family` to `Lobster`. Unfortunately I don't have it in my laptop, and it fallback into something that look like a `Comic Sans`. And the awesome effect suddenly turns into the worst creation.
+   > Just one small change, and it effect the whole art.
