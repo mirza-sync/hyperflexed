@@ -15,4 +15,13 @@ const createTiles = quantity => {
   })
 }
 
-createTiles(columns * rows);
+const createGrid = () => {
+  wrapper.innerHTML = "";
+
+  columns = Math.floor(document.body.clientWidth / 50);
+  rows = Math.floor(document.body.clientHeight / 50);
+
+  createTiles(columns * rows);
+}
+
+window.onresize = () => createGrid();
