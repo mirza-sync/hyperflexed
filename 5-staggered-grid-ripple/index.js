@@ -2,26 +2,14 @@ const wrapper = document.getElementById("tiles");
 
 let columns = Math.floor(document.body.clientWidth / 50),
   rows = Math.floor(document.body.clientHeight / 50);
-const colors = [
-  "rgb(100, 30, 5)",
-  "rgb(9, 32, 7)",
-  "rgb(50, 100, 200)",
-  "rgb(255, 0, 0)",
-  "rgb(0, 255, 0)",
-  "rgb(0, 0, 255)",
-  "rgb(150, 75, 0)",
-  "rgb(255, 255, 0)",
-  "rgb(255, 0, 255)",
-  "rgb(0, 255, 255)"
-];
-let count = -1
+let toggled = false
 
 const handleOnClick = (index) => {
-  count = count + 1
+  toggled = !toggled
 
   anime({
     targets: ".tile",
-    backgroundColor: colors[count % (colors.length - 1)],
+    opacity: toggled ? 0 : 1,
     delay: anime.stagger(50, {
       grid: [columns, rows],
       from: index,
