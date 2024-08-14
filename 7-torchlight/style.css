@@ -1,5 +1,15 @@
 :root {
   --card-size: 300px;
+
+  --background-rgb: 2 6 23;
+  --background-light-rgb: 30 41 59;
+
+  --border-rgb: 255 255 255;
+  --border: 1px solid rgb(var(--border-rgb) / 20%);
+
+  --background-main-rgb: 41 121 255;
+  --background-main-light-rgb: 56 182 255;
+  --background-secondary-rgb: 42 252 152;
 }
 
 html,
@@ -15,10 +25,28 @@ body {
   place-items: center;
 }
 
-#letterbox {
+.card {
+  position: relative;
   width: var(--card-size);
-  aspect-ratio: 1;
+  height: var(--card-size);
+}
+
+#letterbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--card-size);
+  height: var(--card-size);
   color: white;
-  overflow-wrap: anywhere;
+  word-wrap: break-word;
   overflow: hidden;
+  border-radius: 20px;
+  mask-image: radial-gradient(
+    calc(var(--card-size) * 0.8) circle at calc(var(--card-size) / 2)
+      calc(var(--card-size) / 2),
+    rgb(255 255 255) 20%,
+    rgb(255 255 255 / 25%),
+    transparent
+  );
+  z-index: 2;
 }
