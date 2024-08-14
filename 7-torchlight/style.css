@@ -50,3 +50,25 @@ body {
   );
   z-index: 2;
 }
+
+.gradient-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--card-size);
+  height: var(--card-size);
+  background: radial-gradient(
+    rgb(var(--background-light-rgb)) 40%,
+    rgb(var(--background-main-rgb)) 50%,
+    rgb(var(--background-main-light-rgb)),
+    rgb(var(--background-secondary-rgb))
+  );
+  mix-blend-mode: darken;
+  z-index: 3;
+  opacity: 0;
+}
+
+.gradient-card:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
