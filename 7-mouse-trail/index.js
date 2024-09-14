@@ -4,5 +4,5 @@ window.onmousemove = (e) => {
   const y = e.clientY - trailer.offsetHeight / 2;
 
   console.log(x, y);
-  trailer.style.transform = `translate(${x}px ${y}px)`;
+  trailer.style.transform = `translate(${x}px, ${y}px)`;
 };
