@@ -30,6 +30,8 @@ window.onmousemove = (e) => {
 
   animateTrailer(e, interacting);
 
+  trailer.dataset.type = interacting ? interactable.dataset.type : "";
+
   if (interacting) {
     trailer.innerHTML = getTrailerClass(interactable.dataset.type);
   }

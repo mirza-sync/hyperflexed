@@ -48,3 +48,11 @@ body:hover > #trailer {
   background-size: 105%;
   opacity: 0.8;
 }
+
+#trailer:not([data-type=""]) > #trailer-icon {
+  opacity: 1;
+}
+
+#trailer-icon {
+  opacity: 0;
+}
