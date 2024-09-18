@@ -1,4 +1,5 @@
 const trailer = document.getElementById("trailer");
+const trailerIcon = document.getElementById("trailer-icon");
 
 const animateTrailer = (e, interacting) => {
   const x = e.clientX - trailer.offsetWidth / 2;
@@ -33,6 +34,6 @@ window.onmousemove = (e) => {
   trailer.dataset.type = interacting ? interactable.dataset.type : "";
 
   if (interacting) {
-    trailer.innerHTML = getTrailerClass(interactable.dataset.type);
+    trailerIcon.innerHTML = getTrailerClass(interactable.dataset.type);
   }
 };

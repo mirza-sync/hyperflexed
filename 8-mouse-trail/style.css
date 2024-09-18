@@ -26,8 +26,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
-  line-height: 1;
 }
 
 body:hover > #trailer {
@@ -55,4 +53,7 @@ body:hover > #trailer {
 
 #trailer-icon {
   opacity: 0;
+  transition: opacity 400ms ease;
+  font-size: 12px;
+  line-height: 1;
 }
